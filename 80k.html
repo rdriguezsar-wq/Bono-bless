@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#f7eee8">
+<title>Bono de Navidad $80.000 | BLESS TIENDA</title>
+<style>
+*{box-sizing:border-box}body{margin:0;min-height:100vh;background:#f7eee8;color:#4b302e;font-family:Georgia,'Times New Roman',serif;display:grid;place-items:center;padding:18px}
+main{width:min(100%,560px);text-align:center}.cover{position:relative;overflow:hidden;border-radius:18px;box-shadow:0 14px 40px #4b302e20;background:#f4e6dc}
+.cover img{display:block;width:100%;height:auto}.action{position:absolute;left:50%;bottom:5.5%;transform:translateX(-50%);border:1px solid #d4b274;background:#86152b;color:#fff8ed;border-radius:999px;padding:15px 26px;letter-spacing:.13em;font:12px Arial,sans-serif;white-space:nowrap;box-shadow:0 7px 20px #3b101b35;cursor:pointer}
+.reveal{display:none;background:#fffaf5;border:1px solid #d4b274;border-radius:18px;padding:42px 24px;box-shadow:0 14px 40px #4b302e20}.reveal.show{display:block}.cover.hide{display:none}
+.kicker{font:10px Arial,sans-serif;letter-spacing:.28em;text-transform:uppercase;color:#a77e45}.reveal h1{font-size:clamp(34px,9vw,48px);font-weight:400;margin:20px 0 10px}.value{font-size:clamp(54px,14vw,76px);color:#86152b;margin:14px 0}.reveal p{font:15px/1.6 Arial,sans-serif;color:#78635d}.back{margin-top:22px;background:transparent;border:1px solid #c7a36a;color:#86152b;border-radius:999px;padding:13px 22px;letter-spacing:.12em;font:11px Arial,sans-serif}
+@media(prefers-reduced-motion:no-preference){.cover img{animation:appear .8s ease both}@keyframes appear{from{opacity:.65;transform:scale(1.015)}to{opacity:1;transform:scale(1)}}}
+</style>
+</head>
+<body>
+<main>
+<section class="cover" id="cover">
+<img src="./bono-80.jpg?v=1" alt="Bono de Navidad BLESS TIENDA por $80.000. Abre tu regalo de Navidad.">
+<button class="action" id="open">ABRIR MI REGALO</button>
+</section>
+<section class="reveal" id="reveal" aria-live="polite">
+<div class="kicker">BLESS TIENDA · Un detalle para ti</div>
+<h1>¡Tu regalo es tuyo!</h1>
+<p>Has recibido un bono de Navidad por valor de</p>
+<div class="value">$80.000</div>
+<p>Elige eso que te hace sentir increíble.<br>¡Te esperamos en BLESS!</p>
+<button class="back" id="back">VOLVER A VER MI REGALO</button>
+</section>
+</main>
+<script>
+const cover=document.getElementById('cover'),reveal=document.getElementById('reveal');
+document.getElementById('open').addEventListener('click',()=>{cover.classList.add('hide');reveal.classList.add('show');window.scrollTo({top:0,behavior:'smooth'});});
+document.getElementById('back').addEventListener('click',()=>{reveal.classList.remove('show');cover.classList.remove('hide');window.scrollTo({top:0,behavior:'smooth'});});
+</script>
+</body>
+</html>
