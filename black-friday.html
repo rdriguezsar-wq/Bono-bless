@@ -4,29 +4,52 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <meta name="theme-color" content="#050505">
-<meta name="description" content="Black Friday llegó a BLESS Boutique. Toca para recibir atención de Karen por WhatsApp.">
+<meta name="description" content="Black Friday llegó a BLESS Boutique. Toda la tienda con descuentos. Karen te asesora por WhatsApp.">
 <title>Black Friday BLESS | Karen te asesora</title>
 <style>
 *{box-sizing:border-box}
 html,body{margin:0;min-height:100%;background:#050505}
-body{min-height:100svh;display:flex;align-items:center;justify-content:center;color:#f8e7b7;font-family:Arial,Helvetica,sans-serif;padding:env(safe-area-inset-top) 0 env(safe-area-inset-bottom)}
-.stage{position:relative;width:min(100vw,480px,56.25svh);aspect-ratio:320/569;margin:auto;background:#030303;overflow:hidden}
-.stage img{display:block;width:100%;height:100%;object-fit:contain}
-.karen-link{position:absolute;left:10%;top:68.5%;width:80%;height:10%;display:block;border-radius:999px;background:transparent;text-decoration:none;outline-offset:4px}
-.karen-link:focus-visible{outline:2px solid #f7cd68}
-.accessible-help{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
-.fallback{position:fixed;left:0;right:0;bottom:calc(8px + env(safe-area-inset-bottom));text-align:center;color:#d8b76c;font-size:11px;letter-spacing:.08em;opacity:.7;pointer-events:none}
-@media (min-width:600px){.stage{box-shadow:0 0 70px rgba(214,167,70,.16)}}
+body{min-height:100svh;display:grid;place-items:center;color:#fff;font-family:Arial,Helvetica,sans-serif}
+.stage{position:relative;width:min(100vw,480px);height:min(100svh,854px);min-height:620px;overflow:hidden;background:radial-gradient(ellipse at 50% 45%,#17130b 0%,#080808 48%,#020202 100%);isolation:isolate;padding:clamp(28px,7vh,64px) 22px 34px;text-align:center;display:flex;flex-direction:column;align-items:center;justify-content:space-between}
+.stage:before,.stage:after{content:"";position:absolute;inset:-20%;pointer-events:none;z-index:-1;background-image:radial-gradient(2px 2px at 18% 22%,#f6c75e 55%,transparent 70%),radial-gradient(1px 1px at 76% 31%,#ffe6a4 55%,transparent 70%),radial-gradient(2px 2px at 83% 73%,#d9a63d 55%,transparent 70%),radial-gradient(1px 1px at 30% 81%,#ffe6a4 55%,transparent 70%);animation:twinkle 3.2s ease-in-out infinite alternate}
+.stage:after{transform:rotate(40deg);opacity:.55;animation-delay:-1.5s}
+@keyframes twinkle{from{opacity:.25;transform:scale(.98)}to{opacity:.9;transform:scale(1.03)}}
+.brand{font-family:Georgia,serif;color:#e8bb58;font-size:clamp(34px,9vw,48px);letter-spacing:.06em;line-height:1}
+.brand small{display:block;color:#fff;font:11px Arial,sans-serif;letter-spacing:.45em;margin-top:8px}
+.heart{font-size:35px;color:#e8bb58;line-height:1;margin-bottom:8px}
+.headline{margin:auto 0;position:relative}
+.black{font-size:clamp(50px,14vw,76px);font-weight:900;letter-spacing:-.055em;line-height:.92;color:#fff;font-style:italic}
+.friday{font-size:clamp(57px,15vw,83px);font-weight:900;letter-spacing:-.06em;line-height:1.02;color:#e9b642;text-shadow:0 3px 0 #8e5c0c,0 0 24px #d69b3155;font-style:italic}
+.rule{width:70%;height:2px;margin:16px auto 26px;background:linear-gradient(90deg,transparent,#f7d47d,transparent);box-shadow:0 0 12px #e9b642}
+.offer{font-size:clamp(23px,6vw,30px);font-weight:700;line-height:1.2;letter-spacing:.015em}
+.offer strong{display:block;color:#e9b642;font-size:1.22em;margin-top:7px}
+.balloons{position:absolute;inset:0;pointer-events:none;z-index:-1}
+.balloon{position:absolute;width:76px;height:100px;border-radius:50% 50% 46% 46%;background:radial-gradient(ellipse at 32% 25%,#555 0%,#171717 28%,#030303 72%);border:1px solid #c99a3d;box-shadow:inset -9px -8px 16px #000,0 0 18px #d6a43c44;animation:float 4.5s ease-in-out infinite}
+.balloon:after{content:"";position:absolute;bottom:-9px;left:calc(50% - 5px);border-left:5px solid transparent;border-right:5px solid transparent;border-top:10px solid #b9852e}
+.balloon:before{content:"";position:absolute;top:98%;left:50%;height:105px;border-left:1px solid #b58a3e;transform:rotate(5deg);transform-origin:top}
+.b1{left:-20px;top:16%;transform:rotate(-12deg)}.b2{right:-23px;top:28%;width:66px;height:88px;animation-delay:-2s}.b3{right:10px;bottom:15%;width:58px;height:76px;animation-delay:-1s}
+.ribbon{position:absolute;width:180px;height:34px;border-top:3px solid #d9a43d;border-bottom:3px solid #8c5b17;opacity:.8;transform:rotate(-18deg);bottom:5%;left:-55px;border-radius:50%;filter:drop-shadow(0 0 7px #d9a43d)}
+.cta{display:block;width:min(100%,360px);padding:20px 12px;border:2px solid #e7b84d;border-radius:999px;background:linear-gradient(180deg,#1b1b1b,#050505);color:#fff;text-decoration:none;font-size:clamp(18px,5vw,23px);font-weight:800;letter-spacing:.04em;box-shadow:0 0 24px #d9a43d55,inset 0 0 14px #d9a43d22;animation:glow 2.5s ease-in-out infinite}
+.cta:active{transform:scale(.98)}
+@keyframes float{0%,100%{translate:0 0}50%{translate:0 -16px}}
+@keyframes glow{0%,100%{box-shadow:0 0 16px #d9a43d44}50%{box-shadow:0 0 30px #e6b84d99}}
+.note{font-size:11px;letter-spacing:.12em;color:#c7a45c;margin-top:12px}
+@media(max-height:680px){.stage{min-height:0;padding-top:24px;padding-bottom:22px}.headline{margin:12px 0}.brand{font-size:32px}.black{font-size:48px}.friday{font-size:55px}.offer{font-size:21px}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important}}
 </style>
 </head>
 <body>
-<main class="stage" aria-label="Promoción Black Friday de BLESS Boutique">
-  <img src="./black-friday.gif?v=1" alt="Black Friday llegó a BLESS. Toda la tienda con descuentos. Karen te asesora." fetchpriority="high">
-  <a class="karen-link" href="https://walink.co/eu9e2n" target="_blank" rel="noopener noreferrer" aria-label="Karen te asesora por WhatsApp">
-    <span class="accessible-help">KAREN TE ASESORA — abrir WhatsApp</span>
-  </a>
+<main class="stage" aria-label="Black Friday BLESS Boutique">
+ <div class="balloons" aria-hidden="true"><i class="balloon b1"></i><i class="balloon b2"></i><i class="balloon b3"></i><i class="ribbon"></i></div>
+ <header><div class="heart">♡</div><div class="brand">BLESS<small>B O U T I Q U E</small></div></header>
+ <section class="headline">
+  <div class="black">BLACK</div><div class="friday">FRIDAY</div><div class="rule"></div>
+  <div class="offer">¡TODA LA TIENDA CON<strong>DESCUENTOS!</strong></div>
+ </section>
+ <footer style="width:100%">
+  <a class="cta" href="https://walink.co/eu9e2n" target="_blank" rel="noopener noreferrer">KAREN TE ASESORA</a>
+  <div class="note">TOCA AQUÍ Y HABLA CON KAREN POR WHATSAPP</div>
+ </footer>
 </main>
-<div class="fallback">Toca el botón «KAREN TE ASESORA» para abrir WhatsApp</div>
-<noscript><p style="color:white;text-align:center">Para contactar a Karen, abre <a href="https://walink.co/eu9e2n">WhatsApp BLESS</a>.</p></noscript>
 </body>
 </html>
