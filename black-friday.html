@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#050505">
+<meta name="description" content="Black Friday llegó a BLESS Boutique. Toca para recibir atención de Karen por WhatsApp.">
+<title>Black Friday BLESS | Karen te asesora</title>
+<style>
+*{box-sizing:border-box}
+html,body{margin:0;min-height:100%;background:#050505}
+body{min-height:100svh;display:flex;align-items:center;justify-content:center;color:#f8e7b7;font-family:Arial,Helvetica,sans-serif;padding:env(safe-area-inset-top) 0 env(safe-area-inset-bottom)}
+.stage{position:relative;width:min(100vw,480px,56.25svh);aspect-ratio:320/569;margin:auto;background:#030303;overflow:hidden}
+.stage img{display:block;width:100%;height:100%;object-fit:contain}
+.karen-link{position:absolute;left:10%;top:68.5%;width:80%;height:10%;display:block;border-radius:999px;background:transparent;text-decoration:none;outline-offset:4px}
+.karen-link:focus-visible{outline:2px solid #f7cd68}
+.accessible-help{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+.fallback{position:fixed;left:0;right:0;bottom:calc(8px + env(safe-area-inset-bottom));text-align:center;color:#d8b76c;font-size:11px;letter-spacing:.08em;opacity:.7;pointer-events:none}
+@media (min-width:600px){.stage{box-shadow:0 0 70px rgba(214,167,70,.16)}}
+</style>
+</head>
+<body>
+<main class="stage" aria-label="Promoción Black Friday de BLESS Boutique">
+  <img src="./black-friday.gif?v=1" alt="Black Friday llegó a BLESS. Toda la tienda con descuentos. Karen te asesora." fetchpriority="high">
+  <a class="karen-link" href="https://walink.co/eu9e2n" target="_blank" rel="noopener noreferrer" aria-label="Karen te asesora por WhatsApp">
+    <span class="accessible-help">KAREN TE ASESORA — abrir WhatsApp</span>
+  </a>
+</main>
+<div class="fallback">Toca el botón «KAREN TE ASESORA» para abrir WhatsApp</div>
+<noscript><p style="color:white;text-align:center">Para contactar a Karen, abre <a href="https://walink.co/eu9e2n">WhatsApp BLESS</a>.</p></noscript>
+</body>
+</html>
