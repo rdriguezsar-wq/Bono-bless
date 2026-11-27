@@ -3,94 +3,36 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="theme-color" content="#f8eee8">
-<title>Un regalo especial | BLESS</title>
+<meta name="theme-color" content="#f7eee8">
+<title>Bono de Navidad $50.000 | BLESS TIENDA</title>
 <style>
-:root{--wine:#8f1025;--red:#b51d32;--gold:#bd9250;--gold2:#e5c98e;--ink:#482b2a;--paper:#fff9f3}
-*{box-sizing:border-box}html{min-height:100%;}body{margin:0;min-height:100vh;color:var(--ink);font-family:Georgia,'Times New Roman',serif;background:radial-gradient(ellipse at 50% 32%,#fffdfa 0,#f8eee8 62%,#ead8cf 100%);overflow-x:hidden}
-body:before,body:after{content:"";position:fixed;z-index:-1;pointer-events:none;width:210px;height:210px;border:1px solid #c8a56d55;border-radius:50%;filter:blur(1px)}body:before{top:-130px;left:-95px}body:after{right:-130px;bottom:-120px}
-.page{width:min(100%,560px);margin:auto;min-height:100svh;padding:24px 22px 30px;display:flex;flex-direction:column;align-items:center;position:relative}
-.topline{width:100%;display:flex;justify-content:space-between;align-items:center;font:10px Arial,sans-serif;letter-spacing:.25em;color:var(--gold);text-transform:uppercase}
-.brand{font-size:31px;letter-spacing:.14em;color:#9a713c;text-align:center;margin:24px 0 2px}
-.brandmark{font-size:20px;display:block;margin-bottom:-3px;color:var(--gold)}
-.brandline{font:9px Arial,sans-serif;letter-spacing:.45em;text-transform:uppercase;color:#6d5550}
-h1{text-align:center;font-size:clamp(42px,11vw,62px);line-height:.98;font-weight:400;margin:24px 0 12px;letter-spacing:-.035em}
-h1 em{display:block;color:var(--wine);font-size:1.16em;font-weight:400}
-.intro{text-align:center;font:15px/1.55 Arial,sans-serif;color:#7c6660;max-width:340px;margin:0 auto}
-.goldline{height:1px;width:65%;margin:18px auto;background:linear-gradient(90deg,transparent,var(--gold),transparent)}
-.giftstage{height:250px;width:100%;display:grid;place-items:center;position:relative;margin:2px 0 0}
-.pedestal{position:absolute;bottom:16px;width:245px;height:23px;border-radius:50%;background:linear-gradient(90deg,#a97832,#f3dfad,#b27e37);box-shadow:0 12px 20px #7c4b3025}
-.gift{position:relative;width:190px;height:165px;z-index:2;filter:drop-shadow(0 16px 14px #7c3a3325);transition:transform .8s}
-.giftbody{position:absolute;bottom:10px;left:13px;width:164px;height:112px;border:1px solid #b77b52;background:linear-gradient(110deg,#f7e2d6,#eac4b8 55%,#f8e5d8);border-radius:4px}
-.giftlid{position:absolute;top:39px;left:3px;width:184px;height:33px;border:1px solid #b77b52;background:linear-gradient(110deg,#fff0e5,#e8c2b4);border-radius:4px;z-index:3;transform-origin:left center;transition:transform .9s}
-.band{position:absolute;z-index:4;left:82px;top:39px;width:27px;height:138px;background:linear-gradient(90deg,#9a1025,#d94b4d,#8d1025)}
-.bow{position:absolute;z-index:5;top:6px;left:60px;width:72px;height:42px}
-.bow:before,.bow:after{content:"";position:absolute;width:42px;height:28px;border:10px solid #a8142b;border-radius:80% 15% 80% 15%;box-shadow:inset 0 0 0 1px #e46b69}
-.bow:before{left:0;transform:rotate(25deg)}.bow:after{right:0;transform:scaleX(-1) rotate(25deg)}
-.knot{position:absolute;left:31px;top:13px;width:22px;height:24px;background:linear-gradient(90deg,#8c1025,#d84b50,#8c1025);border-radius:5px;z-index:6}
-.tag{position:absolute;z-index:6;right:15px;bottom:28px;background:#f4dfad;color:#75522a;padding:7px 8px;font:9px Arial,sans-serif;letter-spacing:.1em;transform:rotate(-9deg);box-shadow:0 2px 6px #6b402333}
-.opening .gift{transform:translateY(-8px) scale(1.04)}.opening .giftlid{transform:translate(-16px,-52px) rotate(-22deg)}.opening .bow{transform:translateY(-55px) rotate(-12deg);transition:transform .9s}
-.choice-label{text-align:center;font:14px Arial,sans-serif;color:#775c53;margin:0 0 14px}
-.choices{width:100%;display:grid;grid-template-columns:repeat(3,1fr);gap:9px}
-.choice{border:1px solid #d9b46f;border-radius:999px;padding:14px 5px;background:linear-gradient(120deg,#8c1025,#b41b31);color:#fff9ed;font:600 14px Arial,sans-serif;letter-spacing:.02em;box-shadow:0 6px 14px #6c16251c;cursor:pointer;transition:transform .2s,filter .2s}
-.choice:hover,.choice:focus-visible{transform:translateY(-3px);filter:brightness(1.1);outline:2px solid var(--gold);outline-offset:3px}
-.footer{margin-top:auto;padding-top:26px;text-align:center;width:100%}
-.footerline{height:12px;border-top:2px solid var(--wine);border-radius:50%;position:relative;margin-bottom:12px}
-.footerline:after{content:"♡";position:absolute;top:-17px;left:calc(50% - 13px);font-size:25px;color:var(--gold);background:#f8eee8;padding:0 8px}
-.footer p{font:italic 13px Georgia,serif;color:#8a5d51;margin:0}
-.reveal{display:none;text-align:center;width:100%;padding:10px 0 30px;animation:fade .7s ease}
-.reveal.show{display:block}.home.hide{display:none}
-.reveal .giftstage{height:220px}.reveal h2{font-size:39px;font-weight:400;margin:20px 0 8px}.reveal .value{font-size:clamp(54px,14vw,76px);color:var(--wine);margin:12px 0}
-.reveal p{font:15px/1.6 Arial,sans-serif;color:#7c6660}
-.back{margin-top:18px;border:1px solid var(--gold);background:transparent;color:var(--wine);border-radius:999px;padding:13px 24px;font:11px Arial,sans-serif;letter-spacing:.18em}
-@keyframes fade{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
-@media(max-width:380px){.page{padding:20px 16px 25px}.giftstage{height:220px}.choice{font-size:12px;padding:13px 2px}h1{margin-top:20px}}
-@media(prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+*{box-sizing:border-box}body{margin:0;min-height:100vh;background:#f7eee8;color:#4b302e;font-family:Georgia,'Times New Roman',serif;display:grid;place-items:center;padding:18px}
+main{width:min(100%,560px);text-align:center}.cover{position:relative;overflow:hidden;border-radius:18px;box-shadow:0 14px 40px #4b302e20;background:#f4e6dc}
+.cover img{display:block;width:100%;height:auto}.action{position:absolute;left:50%;bottom:5.5%;transform:translateX(-50%);border:1px solid #d4b274;background:#86152b;color:#fff8ed;border-radius:999px;padding:15px 26px;letter-spacing:.13em;font:12px Arial,sans-serif;white-space:nowrap;box-shadow:0 7px 20px #3b101b35;cursor:pointer}
+.reveal{display:none;background:#fffaf5;border:1px solid #d4b274;border-radius:18px;padding:42px 24px;box-shadow:0 14px 40px #4b302e20}.reveal.show{display:block}.cover.hide{display:none}
+.kicker{font:10px Arial,sans-serif;letter-spacing:.28em;text-transform:uppercase;color:#a77e45}.reveal h1{font-size:clamp(34px,9vw,48px);font-weight:400;margin:20px 0 10px}.value{font-size:clamp(54px,14vw,76px);color:#86152b;margin:14px 0}.reveal p{font:15px/1.6 Arial,sans-serif;color:#78635d}.back{margin-top:22px;background:transparent;border:1px solid #c7a36a;color:#86152b;border-radius:999px;padding:13px 22px;letter-spacing:.12em;font:11px Arial,sans-serif}
+@media(prefers-reduced-motion:no-preference){.cover img{animation:appear .8s ease both}@keyframes appear{from{opacity:.65;transform:scale(1.015)}to{opacity:1;transform:scale(1)}}}
 </style>
 </head>
 <body>
-<main class="page">
-<section class="home" id="home">
-<div class="topline"><span>Edición especial</span><span>Temporada de regalos ✦</span></div>
-<div class="brand"><span class="brandmark">♡</span>BLESS</div><div class="brandline">Tienda multimarca</div>
-<h1>Un regalo <em>especial</em> te espera</h1>
-<p class="intro">Hay detalles que hablan por sí solos.<br>El tuyo está a punto de revelar una sorpresa.</p>
-<div class="goldline"></div>
-<div class="giftstage" id="giftstage">
-<div class="gift" aria-label="Regalo envuelto en cinta roja">
-<div class="giftbody"></div><div class="band"></div><div class="giftlid"></div><div class="bow"></div><div class="knot"></div><div class="tag">PARA TI ♡</div>
-</div><div class="pedestal"></div>
-</div>
-<p class="choice-label">¿Qué bono tienes en tus manos?</p>
-<div class="choices">
-<button class="choice" data-value="50.000">$50.000</button>
-<button class="choice" data-value="80.000">$80.000</button>
-<button class="choice" data-value="100.000">$100.000</button>
-</div>
-<div class="footer"><div class="footerline"></div><p>Un detalle pensado especialmente para ti</p></div>
+<main>
+<section class="cover" id="cover">
+<img src="portada-50k.jpg" alt="Bono de Navidad BLESS TIENDA por $50.000. Abre tu regalo de Navidad.">
+<button class="action" id="open">ABRIR MI REGALO</button>
 </section>
 <section class="reveal" id="reveal" aria-live="polite">
-<div class="topline"><span>Un detalle para ti</span><span>BLESS ♡</span></div>
-<div class="brand"><span class="brandmark">♡</span>BLESS</div><div class="brandline">Tienda multimarca</div>
-<h2>¡Este regalo es tuyo!</h2>
-<p>Disfruta de tu bono por valor de</p>
-<div class="value" id="value">$50.000</div>
-<div class="goldline"></div>
+<div class="kicker">BLESS TIENDA · Un detalle para ti</div>
+<h1>¡Tu regalo es tuyo!</h1>
+<p>Has recibido un bono de Navidad por valor de</p>
+<div class="value">$50.000</div>
 <p>Elige eso que te hace sentir increíble.<br>¡Te esperamos en BLESS!</p>
-<button class="back" id="back">VOLVER A LA PORTADA</button>
-<div class="footer"><div class="footerline"></div><p>Con cariño, BLESS TIENDA</p></div>
+<button class="back" id="back">VOLVER A VER MI REGALO</button>
 </section>
 </main>
 <script>
-const home=document.getElementById('home'),reveal=document.getElementById('reveal'),stage=document.getElementById('giftstage'),value=document.getElementById('value');
-document.querySelectorAll('[data-value]').forEach(button=>button.addEventListener('click',()=>{
- value.textContent='$'+button.dataset.value;
- stage.classList.add('opening');
- window.setTimeout(()=>{home.classList.add('hide');reveal.classList.add('show');window.scrollTo({top:0,behavior:'smooth'});},650);
-}));
-document.getElementById('back').addEventListener('click',()=>{
- reveal.classList.remove('show');home.classList.remove('hide');stage.classList.remove('opening');window.scrollTo({top:0,behavior:'smooth'});
-});
+const cover=document.getElementById('cover'),reveal=document.getElementById('reveal');
+document.getElementById('open').addEventListener('click',()=>{cover.classList.add('hide');reveal.classList.add('show');window.scrollTo({top:0,behavior:'smooth'});});
+document.getElementById('back').addEventListener('click',()=>{reveal.classList.remove('show');cover.classList.remove('hide');window.scrollTo({top:0,behavior:'smooth'});});
 </script>
 </body>
 </html>
